@@ -47,6 +47,6 @@ function update(req, res){
 
 function show(req, res){
     Product.findById(req.params.id, function(err, product) {
-        res.render('products/show', { product })
+        res.render('products/show', { title: 'The Curl Review' , product })
     })
 }
