@@ -5,6 +5,8 @@ const methodOverride = require('method-override');
 const port = 3000;
 
 const indexRouter = require('./routes/index');
+const productsRouter = require('./routes/products');
+const reviewsRouter= require('./routes/reviews')
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
+app.use('/products', productsRouter);
+app.use('/', reviewsRouter);
 
 app.listen(port, function(){
     console.log(`Express is listening on ${port}`)
