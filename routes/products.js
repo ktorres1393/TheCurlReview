@@ -18,5 +18,8 @@ router.put('/:id', productsCtrl.update);
 
 router.get('/:id/show', productsCtrl.show)
 
+router.get('/:id', productsCtrl.show)
+
+
 module.exports = router;
 

@@ -33,5 +33,12 @@ main {
     color: goldenrod;
     margin-top: 100px;
 }
-
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; 
+}
 

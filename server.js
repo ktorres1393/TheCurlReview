@@ -1,8 +1,19 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
+const port = process.env.PORT || 3000;
+const MONGODB_URI =  process.env.MONGODB_URI;
 const methodOverride = require('method-override');
 
-const port = 3000;
+const db = mongoose.connection;
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true });
+
+// mongodb error / success ===============
+db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
+db.on('connected', () => console.log('mongo connected'));
+db.on('disconnected', () => console.log('mongo disconnected'));
+
 
 const indexRouter = require('./routes/index');
 const productsRouter = require('./routes/products');
