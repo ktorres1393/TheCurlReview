@@ -1,0 +1,14 @@
+<footer class="footer">
+	<div class="row">
+		<ul class="footer-icons">
+			{% for account in site.data.social.footer %}
+				
+				{% if account.name == 'github' %}<li><a href="{{ account.link }}" class="icon-github" target="_blank"><svg class="icon icon-social-github"><use xlink:href="#icon-social-github"></use></svg></a></li> {% endif %}
+				
+				
+		</ul>
+		
+		<small class="footer-text tc">Made with <span class="icon-favorite"><svg class="icon icon-heart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg></span> by <a href="https://github.com/tocsoft">Tocsoft</a></small>
+
+	</div>
+</footer>

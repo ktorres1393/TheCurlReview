@@ -8,7 +8,7 @@
     <title>Edit</title>
 </head>
 <body>
-    
+    <%-include('../products/partials/header.ejs')%>
     <h1>Edit</h1>
     <form action="/products/<%= product._id %>?_method=PUT" method="POST">
         <input type="text" name="name" value="<%= product.name %>">
