@@ -9,12 +9,26 @@
 </head>
 <body>
     <%-include('../products/partials/header.ejs')%>
-    <h1>Join in the Curly Convo!</h1>
     
-    <form action="/products" method="POST">
+    <div class="newForm">
+    <h1 class="newTitle">Join in the Curly Convo!</h1>
+    <br></br>
+    
+
+    <form class="form" action="/products" method="POST">
+        <div class="productName">
+        <p>Product Name:</p>
         <input type="text" name="name">
+         </div>
+         <br></br>
+<div class="submitBox">
+    <p>Give a brief description of how this product should be used:</p>
         <textarea name="description" cols="30" rows="10"></textarea>
-        <input type="submit" value="Start a Curl Convo ">
+        <br></br>
+        <input class="newBtn" type="submit" value="Start a Curl Convo ">
      </form>
+</div>
+    </div>
 </body>
+<%-include('../products/partials/footer.ejs')%>
 </html>
