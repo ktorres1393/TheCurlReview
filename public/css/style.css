@@ -4,6 +4,10 @@
   body {
     height: 100vh; 
     padding: 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("https://storage.googleapis.com/prose-blog-media/1/2019/07/curly-hair-hacks-copy-1200x803.jpg");
+    text-align: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
     
      
   }
@@ -28,23 +32,11 @@ header li a {
     color: white;
     text-decoration: none;
 }
+.title-page{
+    margin-top: 25%;
+    font-size: x-large !important;
+}
 
-main {
-    color: goldenrod;
-    margin-top: 100px;
-}
-.carousel{
-    background: #2f4357;
-    margin-top: 60px;
-}
-.carousel-item{
-    height: 32rem;
-    background: #777;
-    color: white;
-    position: relative;
-    background-position: center;
-    background-size: cover; 
-}
 .container{
     position: absolute;
     bottom: 0;
@@ -62,28 +54,34 @@ table {
     display: flex;
     align-items: baseline;
     width: 350px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .newForm{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 10%;
     
+}
+.productName{
+color: white;
 }
 .submitBox{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .newTitle{
     text-align: center;
+    color: white;
 }
 .newBtn{
 
     width: 50%;
+    
 }
 .editTitle{
     text-align: center;
@@ -114,19 +112,46 @@ table {
    
     text-align: center;
 }
-.heroImage {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("https://storage.googleapis.com/prose-blog-media/1/2019/07/curly-hair-hacks-copy-1200x803.jpg");
-    height: 400px;
+.curly-img > img{
+    
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.reviewOutput{
+    
+    display: flex;
+    flex-direction: column;
+}
+.reviewForm{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.showTable{
+    color: white !important;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)) !important;
+    
+    
+}
+table {
     width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
+    
 }
-.heroContents {
-	padding-top: 50px;
-	text-align: center;
-	color: white;
+
+#add-review-form{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
 }
+
 
 footer {
 
@@ -139,5 +164,6 @@ footer {
     width: 100%;
     background-color: black;
     color: white;
+    
       
   }
