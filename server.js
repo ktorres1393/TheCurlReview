@@ -18,6 +18,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 const indexRouter = require('./routes/index');
 const productsRouter = require('./routes/products');
 const reviewsRouter= require('./routes/reviews')
+const aboutRouter= require('./routes/about')
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/', reviewsRouter);
+app.use('/about', aboutRouter)
 
 app.listen(port, function(){
     console.log(`Express is listening on ${port}`)
