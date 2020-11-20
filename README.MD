@@ -10,8 +10,10 @@ A web application where natural hair enthusiasts can form communities where they
 - Express.js
 - Mongoose MongoDB
 - Bootstrap
+- Google Fonts
 
 ## Screenshots
+<img src='public/images/CreatePage.png'>
 
 ## Getting Started
 [Click Here]() to see the deployed app!
