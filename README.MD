@@ -13,7 +13,19 @@ A web application where natural hair enthusiasts can form communities where they
 - Google Fonts
 
 ## Screenshots
+
+### Home Page
+<img src= public/images/Homepage.png>
+
+### Index page
 <img src= 'public/images/Index.png' >
+
+### Show page
+<img src= 'public/images/Showpage.png'>
+
+### Create Page
+<img src= 'public/images/CreatePage.png'>
+
 
 ## Getting Started
 [Click Here]() to see the deployed app!
